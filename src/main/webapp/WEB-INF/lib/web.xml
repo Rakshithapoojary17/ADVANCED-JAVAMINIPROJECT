@@ -1,0 +1,51 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+<servlet>
+<servlet-name>Add</servlet-name>
+<servlet-class>com.servlet.AddEmployeeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Add</servlet-name>
+<url-pattern>/AddEmployeeServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Update</servlet-name>
+<servlet-class>com.servlet.UpdateEmployeeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Update</servlet-name>
+<url-pattern>/UpdateEmployeeServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Delete</servlet-name>
+<servlet-class>com.servlet.DeleteEmployeeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Delete</servlet-name>
+<url-pattern>/DeleteEmployeeServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Display</servlet-name>
+<servlet-class>com.servlet.DisplayEmployeeServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Display</servlet-name>
+<url-pattern>/DisplayEmployeeServlet</url-pattern>
+</servlet-mapping>
+ <servlet>
+        <servlet-name>Report</servlet-name>
+        <servlet-class>com.servlet.ReportServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Report</servlet-name>
+        <url-pattern>/ReportServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
